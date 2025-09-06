@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: mindblowgame
+    env: java
+    plan: free
+    buildCommand: |
+      chmod +x gradlew || true
+      ./gradlew clean build
+    startCommand: ./gradlew jproRun -Djpro.port=$PORT -Djpro.host=0.0.0.0
+    envVars:
+      - key: JAVA_VERSION
+        value: "17"
