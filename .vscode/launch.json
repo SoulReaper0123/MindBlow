@@ -1,0 +1,104 @@
+{
+  // VS Code Java launch configuration
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Win",
+      "request": "launch",
+      "mainClass": "mindblowgame.Win",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "QuestionMark",
+      "request": "launch",
+      "mainClass": "mindblowgame.QuestionMark",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Project2",
+      "request": "launch",
+      "mainClass": "mindblowgame.Project2",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "playButton1",
+      "request": "launch",
+      "mainClass": "mindblowgame.playButton1",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "playButton",
+      "request": "launch",
+      "mainClass": "mindblowgame.playButton",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Level1",
+      "request": "launch",
+      "mainClass": "mindblowgame.Level1",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Level2",
+      "request": "launch",
+      "mainClass": "mindblowgame.Level2",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Level3",
+      "request": "launch",
+      "mainClass": "mindblowgame.Level3",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Information",
+      "request": "launch",
+      "mainClass": "mindblowgame.Information",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "home",
+      "request": "launch",
+      "mainClass": "mindblowgame.home",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "loading",
+      "request": "launch",
+      "mainClass": "mindblowgame.loading",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Run loading (MindBlow)",
+      "request": "launch",
+      "mainClass": "mindblowgame.loading",
+      "projectName": "mindblowgame"
+    },
+    {
+      "type": "java",
+      "name": "Run home (MindBlow)",
+      "request": "launch",
+      "mainClass": "mindblowgame.home",
+      "projectName": "mindblowgame"
+    },
+    {
+      "type": "java",
+      "name": "Run Project2 (legacy)",
+      "request": "launch",
+      "mainClass": "mindblowgame.Project2",
+      "projectName": "mindblowgame"
+    }
+  ]
+}

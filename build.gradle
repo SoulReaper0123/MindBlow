@@ -1,0 +1,48 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'com.jpro.gradle' version '2024.1.1'
+}
+
+group = 'mindblowgame'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+application {
+    mainClass = 'mindblowgame.MainApp'
+}
+
+dependencies {
+    def javafxVersion = '21.0.3'
+
+    implementation "org.openjfx:javafx-base:${javafxVersion}"
+    implementation "org.openjfx:javafx-controls:${javafxVersion}"
+    implementation "org.openjfx:javafx-graphics:${javafxVersion}"
+    // Linux classifiers are useful for some environments
+    implementation "org.openjfx:javafx-graphics:${javafxVersion}:linux"
+    implementation "org.openjfx:javafx-controls:${javafxVersion}:linux"
+}
+
+jpro {
+    host = '0.0.0.0'
+    // port is set via -Djpro.port=$PORT on Render
+}
+
+// Headless-friendly flags for server rendering
+ tasks.withType(JavaExec) {
+    jvmArgs += ['-Dprism.order=sw', '-Djava.awt.headless=true']
+}
+
+// Heroku/Render-style convenience task
+ tasks.register('stage') {
+    dependsOn 'build'
+}
